@@ -48,7 +48,6 @@ hotel (int)(foranea)
 
 MOVIMIENTO
 id (int)
-partida(int)
 movimiento blanca(varchar)
 movimiento neghra(varchar)
 comenatario (varchar)
