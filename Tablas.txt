@@ -1,0 +1,54 @@
+BD
+participantes
+alojamientos
+partidas
+
+HOTEL
+direccion (varchar)
+nombre (varchar)
+telefono (int)
+
+HUESPED
+Nombre (varchar) (foreanea)
+fecha de hospedaje (int)
+hotel (varchar)(foranea)
+
+PARTICIPANTES
+nombre(varchar)
+direccion(varchar)
+telefono (int)
+campeonatos jugador (int)
+campeonatos arbitro (int)
+nivel de juego (int)
+pais(id)(foranea)
+
+PAIS
+id (int)
+nombre (varchar)
+No. clubes (int)
+
+PARTIDA
+Cod_P (int)
+  llave complementaria
+   {
+   jugador 1 (varchar)(foranea)
+   jugador 2 (varchar)(foranea)
+   arbitro (varchar)(foranea)
+   fecha (varchar) 
+   }
+sala (int) (foranea)
+movimientos(int)(foranea)
+
+SALA
+id (int)
+entradas vendidas (int)
+capacidad (int)
+medios disponibles (varchar)
+hotel (int)(foranea) 
+
+MOVIMIENTO
+id (int)
+partida(int)
+movimiento blanca(varchar)
+movimiento neghra(varchar)
+comenatario (varchar)
