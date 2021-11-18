@@ -1,0 +1,16 @@
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Presentaciones.exe.config
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Presentaciones.exe
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Presentaciones.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.csproj.AssemblyReference.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmInicioSesion.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmhotel.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmMenu.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmMovimiento.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmPais.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.Properties.Resources.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.csproj.GenerateResource.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.csproj.CoreCompileInputs.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.exe
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmparticipantes.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmpartida.resources
