@@ -19,7 +19,7 @@ namespace Entidades
         public EntidadParticipantes(int id, string Nombre, string Direccion,
             string telefono, string Competencia, string Rol, int Fk_Pais )
         {
-            _Id_Participante = _Id_Participante;
+            _Id_Participante = id;
             _Nombre = Nombre;
             _Direccion = Direccion;
             _Telefono = telefono;

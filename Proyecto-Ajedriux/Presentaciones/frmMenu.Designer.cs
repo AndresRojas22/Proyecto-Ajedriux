@@ -30,16 +30,16 @@ namespace Presentaciones
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnParticipantes = new System.Windows.Forms.ToolStripButton();
             this.BtnHotel = new System.Windows.Forms.ToolStripButton();
             this.btnPais = new System.Windows.Forms.ToolStripButton();
             this.btnSala = new System.Windows.Forms.ToolStripButton();
             this.btnPartida = new System.Windows.Forms.ToolStripButton();
             this.btnMove = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -70,9 +70,81 @@ namespace Presentaciones
             this.btnMove});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(174, 458);
+            this.toolStrip1.Size = new System.Drawing.Size(174, 480);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnParticipantes
+            // 
+            this.btnParticipantes.BackColor = System.Drawing.Color.Chocolate;
+            this.btnParticipantes.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnParticipantes.Image = global::Presentaciones.Properties.Resources.ICONO_TORRE;
+            this.btnParticipantes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnParticipantes.Name = "btnParticipantes";
+            this.btnParticipantes.Size = new System.Drawing.Size(171, 27);
+            this.btnParticipantes.Text = "Participantes";
+            this.btnParticipantes.Click += new System.EventHandler(this.btnParticipantes_Click);
+            // 
+            // BtnHotel
+            // 
+            this.BtnHotel.BackColor = System.Drawing.Color.Chocolate;
+            this.BtnHotel.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHotel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnHotel.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
+            this.BtnHotel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnHotel.Name = "BtnHotel";
+            this.BtnHotel.Size = new System.Drawing.Size(171, 27);
+            this.BtnHotel.Text = "Hotel";
+            this.BtnHotel.Click += new System.EventHandler(this.BtnHotel_Click);
+            // 
+            // btnPais
+            // 
+            this.btnPais.BackColor = System.Drawing.Color.Chocolate;
+            this.btnPais.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnPais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPais.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
+            this.btnPais.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPais.Name = "btnPais";
+            this.btnPais.Size = new System.Drawing.Size(171, 27);
+            this.btnPais.Text = "Pais";
+            this.btnPais.Click += new System.EventHandler(this.btnPais_Click);
+            // 
+            // btnSala
+            // 
+            this.btnSala.BackColor = System.Drawing.Color.Chocolate;
+            this.btnSala.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnSala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSala.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
+            this.btnSala.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSala.Name = "btnSala";
+            this.btnSala.Size = new System.Drawing.Size(171, 27);
+            this.btnSala.Text = "Sala";
+            this.btnSala.Click += new System.EventHandler(this.btnSala_Click);
+            // 
+            // btnPartida
+            // 
+            this.btnPartida.BackColor = System.Drawing.Color.Chocolate;
+            this.btnPartida.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnPartida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPartida.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
+            this.btnPartida.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPartida.Name = "btnPartida";
+            this.btnPartida.Size = new System.Drawing.Size(171, 27);
+            this.btnPartida.Text = "Partida";
+            this.btnPartida.Click += new System.EventHandler(this.btnPartida_Click);
+            // 
+            // btnMove
+            // 
+            this.btnMove.BackColor = System.Drawing.Color.Chocolate;
+            this.btnMove.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnMove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnMove.Image = global::Presentaciones.Properties.Resources.ICONO_TORRE;
+            this.btnMove.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMove.Name = "btnMove";
+            this.btnMove.Size = new System.Drawing.Size(171, 27);
+            this.btnMove.Text = "Movimientos";
+            this.btnMove.Click += new System.EventHandler(this.btnMove_Click);
             // 
             // pictureBox5
             // 
@@ -111,72 +183,6 @@ namespace Presentaciones
             this.pictureBox2.Size = new System.Drawing.Size(174, 10);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
-            // 
-            // btnParticipantes
-            // 
-            this.btnParticipantes.BackColor = System.Drawing.Color.Chocolate;
-            this.btnParticipantes.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnParticipantes.Image = global::Presentaciones.Properties.Resources.ICONO_TORRE;
-            this.btnParticipantes.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnParticipantes.Name = "btnParticipantes";
-            this.btnParticipantes.Size = new System.Drawing.Size(171, 27);
-            this.btnParticipantes.Text = "Participantes";
-            // 
-            // BtnHotel
-            // 
-            this.BtnHotel.BackColor = System.Drawing.Color.Chocolate;
-            this.BtnHotel.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnHotel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnHotel.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
-            this.BtnHotel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnHotel.Name = "BtnHotel";
-            this.BtnHotel.Size = new System.Drawing.Size(171, 27);
-            this.BtnHotel.Text = "Hotel";
-            // 
-            // btnPais
-            // 
-            this.btnPais.BackColor = System.Drawing.Color.Chocolate;
-            this.btnPais.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnPais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnPais.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
-            this.btnPais.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPais.Name = "btnPais";
-            this.btnPais.Size = new System.Drawing.Size(171, 27);
-            this.btnPais.Text = "Pais";
-            // 
-            // btnSala
-            // 
-            this.btnSala.BackColor = System.Drawing.Color.Chocolate;
-            this.btnSala.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnSala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSala.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
-            this.btnSala.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSala.Name = "btnSala";
-            this.btnSala.Size = new System.Drawing.Size(171, 27);
-            this.btnSala.Text = "Sala";
-            // 
-            // btnPartida
-            // 
-            this.btnPartida.BackColor = System.Drawing.Color.Chocolate;
-            this.btnPartida.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnPartida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnPartida.Image = global::Presentaciones.Properties.Resources.ICONO_ALFIL;
-            this.btnPartida.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPartida.Name = "btnPartida";
-            this.btnPartida.Size = new System.Drawing.Size(171, 27);
-            this.btnPartida.Text = "Partida";
-            // 
-            // btnMove
-            // 
-            this.btnMove.BackColor = System.Drawing.Color.Chocolate;
-            this.btnMove.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnMove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnMove.Image = global::Presentaciones.Properties.Resources.ICONO_TORRE;
-            this.btnMove.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnMove.Name = "btnMove";
-            this.btnMove.Size = new System.Drawing.Size(171, 27);
-            this.btnMove.Text = "Movimientos";
             // 
             // pictureBox3
             // 
@@ -227,7 +233,7 @@ namespace Presentaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 458);
+            this.ClientSize = new System.Drawing.Size(795, 480);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -240,8 +246,9 @@ namespace Presentaciones
             this.Controls.Add(this.toolStrip1);
             this.IsMdiContainer = true;
             this.Name = "frmMenu";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

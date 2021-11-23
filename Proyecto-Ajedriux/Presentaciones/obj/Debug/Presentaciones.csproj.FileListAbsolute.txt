@@ -14,3 +14,12 @@ C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.e
 C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.pdb
 C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmparticipantes.resources
 C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmpartida.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.frmsala.resources
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Entidades.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Manejadores.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\AccesoDatos.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\MySql.Data.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Entidades.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\Manejadores.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\bin\Debug\AccesoDatos.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Presentaciones\obj\Debug\Presentaciones.csproj.CopyComplete

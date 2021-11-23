@@ -1,0 +1,6 @@
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Entidades\bin\Debug\Entidades.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Entidades\bin\Debug\Entidades.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Entidades\obj\Debug\Entidades.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Entidades\obj\Debug\Entidades.pdb

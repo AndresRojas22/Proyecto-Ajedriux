@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class EntidadMovimientos
+    public class EntidadMovimientos
     {
         public string _Fecha { get; set; }
         public string _JugadorN { get; set; }
@@ -19,7 +19,7 @@ namespace Entidades
         {
             _Fecha = Fecha;
             _JugadorN = JugadorN;
-            _JugadorB = _JugadorB;
+            _JugadorB = JugadorB;
             _N_Movimiento = N_Movimiento;
             _CasillaI = CasillaI;
             _CasillaF = CasillaF;

@@ -7,9 +7,10 @@ namespace AccesoDatos
     public class Base
     {
         MySqlConnection _conn;
-        public Base(string Servidor, string Usuario, string Clave, string BD)
+        public Base(string s, string u, string p, string b, uint po)
         {
-            _conn = new MySqlConnection(string.Format("server={0}; user={1}; password={2}; database={3};SslMode=none", Servidor, Usuario, Clave, BD));
+            _conn = new MySqlConnection(string.Format("server={0}; user={1}; password={2}; database = {3}; port = {4}", s, u, p,
+                b, po));
         }
         public string Comando(string q)
         {

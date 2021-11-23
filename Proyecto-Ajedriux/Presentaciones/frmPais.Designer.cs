@@ -29,8 +29,6 @@ namespace Presentaciones
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtpais = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtclubes = new System.Windows.Forms.TextBox();
@@ -57,6 +55,8 @@ namespace Presentaciones
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.DTG = new System.Windows.Forms.DataGridView();
+            this.btnactualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -74,26 +74,8 @@ namespace Presentaciones
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtpais
-            // 
-            this.txtpais.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Bold);
-            this.txtpais.Location = new System.Drawing.Point(278, 312);
-            this.txtpais.Name = "txtpais";
-            this.txtpais.Size = new System.Drawing.Size(211, 29);
-            this.txtpais.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.Location = new System.Drawing.Point(277, 285);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 18);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "PAIS DE ORIGEN";
             // 
             // txtnombre
             // 
@@ -168,24 +150,26 @@ namespace Presentaciones
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btneliminar.ForeColor = System.Drawing.Color.Orange;
-            this.btneliminar.Location = new System.Drawing.Point(564, 386);
+            this.btneliminar.Location = new System.Drawing.Point(1116, 377);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(141, 29);
             this.btneliminar.TabIndex = 40;
             this.btneliminar.Text = "ELIMINAR";
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnaceptar
             // 
             this.btnaceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaceptar.ForeColor = System.Drawing.Color.Orange;
-            this.btnaceptar.Location = new System.Drawing.Point(417, 386);
+            this.btnaceptar.Location = new System.Drawing.Point(822, 377);
             this.btnaceptar.Name = "btnaceptar";
             this.btnaceptar.Size = new System.Drawing.Size(141, 29);
             this.btnaceptar.TabIndex = 39;
             this.btnaceptar.Text = "ACEPTAR";
             this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // pictureBox1
             // 
@@ -343,12 +327,36 @@ namespace Presentaciones
             this.pictureBox17.TabIndex = 50;
             this.pictureBox17.TabStop = false;
             // 
+            // DTG
+            // 
+            this.DTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTG.Location = new System.Drawing.Point(741, 9);
+            this.DTG.Name = "DTG";
+            this.DTG.Size = new System.Drawing.Size(516, 362);
+            this.DTG.TabIndex = 128;
+            this.DTG.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTG_CellEnter);
+            // 
+            // btnactualizar
+            // 
+            this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizar.ForeColor = System.Drawing.Color.Orange;
+            this.btnactualizar.Location = new System.Drawing.Point(969, 377);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(141, 29);
+            this.btnactualizar.TabIndex = 129;
+            this.btnactualizar.Text = "ACTUALIZAR";
+            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
+            // 
             // frmPais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(716, 427);
+            this.ClientSize = new System.Drawing.Size(1269, 416);
+            this.Controls.Add(this.btnactualizar);
+            this.Controls.Add(this.DTG);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
@@ -368,8 +376,6 @@ namespace Presentaciones
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtpais);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtclubes);
@@ -378,8 +384,8 @@ namespace Presentaciones
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox17);
             this.Name = "frmPais";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmPais";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -397,14 +403,13 @@ namespace Presentaciones
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtpais;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtclubes;
@@ -431,5 +436,7 @@ namespace Presentaciones
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.DataGridView DTG;
+        private System.Windows.Forms.Button btnactualizar;
     }
 }

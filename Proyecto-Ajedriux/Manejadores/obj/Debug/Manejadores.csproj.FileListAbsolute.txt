@@ -1,0 +1,12 @@
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\Manejadores.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\Manejadores.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\AccesoDatos.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\Entidades.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\MySql.Data.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\AccesoDatos.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\bin\Debug\Entidades.pdb
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\obj\Debug\Manejadores.csproj.AssemblyReference.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\obj\Debug\Manejadores.csproj.CoreCompileInputs.cache
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\obj\Debug\Manejadores.csproj.CopyComplete
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\obj\Debug\Manejadores.dll
+C:\Proyecto-Ajedriux\Proyecto-Ajedriux\Manejadores\obj\Debug\Manejadores.pdb

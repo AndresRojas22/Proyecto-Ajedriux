@@ -64,6 +64,7 @@ namespace Presentaciones
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.DTG = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -81,6 +82,7 @@ namespace Presentaciones
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG)).BeginInit();
             this.SuspendLayout();
             // 
             // btneliminar
@@ -88,24 +90,26 @@ namespace Presentaciones
             this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btneliminar.ForeColor = System.Drawing.Color.Orange;
-            this.btneliminar.Location = new System.Drawing.Point(566, 420);
+            this.btneliminar.Location = new System.Drawing.Point(1117, 381);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(141, 29);
             this.btneliminar.TabIndex = 68;
             this.btneliminar.Text = "ELIMINAR";
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnaceptar
             // 
             this.btnaceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaceptar.ForeColor = System.Drawing.Color.Orange;
-            this.btnaceptar.Location = new System.Drawing.Point(272, 420);
+            this.btnaceptar.Location = new System.Drawing.Point(823, 381);
             this.btnaceptar.Name = "btnaceptar";
             this.btnaceptar.Size = new System.Drawing.Size(141, 29);
             this.btnaceptar.TabIndex = 67;
             this.btnaceptar.Text = "ACEPTAR";
             this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // label6
             // 
@@ -256,12 +260,13 @@ namespace Presentaciones
             this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnactualizar.ForeColor = System.Drawing.Color.Orange;
-            this.btnactualizar.Location = new System.Drawing.Point(419, 420);
+            this.btnactualizar.Location = new System.Drawing.Point(970, 381);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(141, 29);
             this.btnactualizar.TabIndex = 89;
             this.btnactualizar.Text = "ACTUALIZAR";
             this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // pictureBox1
             // 
@@ -419,12 +424,22 @@ namespace Presentaciones
             this.pictureBox17.TabIndex = 78;
             this.pictureBox17.TabStop = false;
             // 
+            // DTG
+            // 
+            this.DTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTG.Location = new System.Drawing.Point(741, 13);
+            this.DTG.Name = "DTG";
+            this.DTG.Size = new System.Drawing.Size(516, 362);
+            this.DTG.TabIndex = 129;
+            this.DTG.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTG_CellEnter);
+            // 
             // frmparticipantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(721, 461);
+            this.ClientSize = new System.Drawing.Size(1269, 421);
+            this.Controls.Add(this.DTG);
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtcompetencia);
@@ -461,8 +476,8 @@ namespace Presentaciones
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox17);
             this.Name = "frmparticipantes";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmparticipantes";
             this.Load += new System.EventHandler(this.frmparticipantes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -481,6 +496,7 @@ namespace Presentaciones
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,5 +539,6 @@ namespace Presentaciones
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtcompetencia;
         private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.DataGridView DTG;
     }
 }

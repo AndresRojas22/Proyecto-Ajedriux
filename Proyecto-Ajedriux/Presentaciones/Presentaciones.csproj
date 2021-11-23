@@ -170,5 +170,15 @@
   <ItemGroup>
     <None Include="Resources\TABLERO DE REFERENCIA.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{dd2fa541-e265-44c9-b820-db1927e9f522}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejadores\Manejadores.csproj">
+      <Project>{184ef593-7ce2-44b6-8422-d931659a625a}</Project>
+      <Name>Manejadores</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

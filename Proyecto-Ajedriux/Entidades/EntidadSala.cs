@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class EntidadSala
+    public class EntidadSala
     {
         public int _Id_Sala { get; set; }
         public int _Capacidad { get; set; }
@@ -16,7 +16,7 @@ namespace Entidades
             string Medios, int fk_Hotel)
         {
             _Id_Sala = Id_sala;
-            _Capacidad = _Capacidad;
+            _Capacidad = Capaciad;
             _Medios = Medios;
             Fk_Id_Hotel = fk_Hotel;
         }

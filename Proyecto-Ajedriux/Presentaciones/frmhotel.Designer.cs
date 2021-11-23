@@ -35,7 +35,7 @@ namespace Presentaciones
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtdescripcion = new System.Windows.Forms.TextBox();
+            this.txtdireccion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnaceptar = new System.Windows.Forms.Button();
@@ -56,6 +56,8 @@ namespace Presentaciones
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.DTG = new System.Windows.Forms.DataGridView();
+            this.btnactualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -72,6 +74,7 @@ namespace Presentaciones
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG)).BeginInit();
             this.SuspendLayout();
             // 
             // txtid
@@ -131,13 +134,13 @@ namespace Presentaciones
             this.label3.TabIndex = 7;
             this.label3.Text = "NOMBRE";
             // 
-            // txtdescripcion
+            // txtdireccion
             // 
-            this.txtdescripcion.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Bold);
-            this.txtdescripcion.Location = new System.Drawing.Point(357, 310);
-            this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.Size = new System.Drawing.Size(320, 29);
-            this.txtdescripcion.TabIndex = 10;
+            this.txtdireccion.Font = new System.Drawing.Font("Bell MT", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtdireccion.Location = new System.Drawing.Point(357, 310);
+            this.txtdireccion.Name = "txtdireccion";
+            this.txtdireccion.Size = new System.Drawing.Size(320, 29);
+            this.txtdireccion.TabIndex = 10;
             // 
             // label4
             // 
@@ -146,9 +149,9 @@ namespace Presentaciones
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.Location = new System.Drawing.Point(354, 283);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 18);
+            this.label4.Size = new System.Drawing.Size(97, 18);
             this.label4.TabIndex = 9;
-            this.label4.Text = "DESCRIPCION";
+            this.label4.Text = "DIRECCION";
             // 
             // label5
             // 
@@ -166,19 +169,20 @@ namespace Presentaciones
             this.btnaceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaceptar.ForeColor = System.Drawing.Color.Orange;
-            this.btnaceptar.Location = new System.Drawing.Point(415, 380);
+            this.btnaceptar.Location = new System.Drawing.Point(816, 380);
             this.btnaceptar.Name = "btnaceptar";
             this.btnaceptar.Size = new System.Drawing.Size(141, 29);
             this.btnaceptar.TabIndex = 12;
             this.btnaceptar.Text = "ACEPTAR";
             this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // btnborrar
             // 
             this.btnborrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnborrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnborrar.ForeColor = System.Drawing.Color.Orange;
-            this.btnborrar.Location = new System.Drawing.Point(562, 380);
+            this.btnborrar.Location = new System.Drawing.Point(1110, 380);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(141, 29);
             this.btnborrar.TabIndex = 13;
@@ -334,12 +338,36 @@ namespace Presentaciones
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
+            // DTG
+            // 
+            this.DTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTG.Location = new System.Drawing.Point(735, 12);
+            this.DTG.Name = "DTG";
+            this.DTG.Size = new System.Drawing.Size(516, 362);
+            this.DTG.TabIndex = 52;
+            this.DTG.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTG_CellEnter);
+            // 
+            // btnactualizar
+            // 
+            this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizar.ForeColor = System.Drawing.Color.Orange;
+            this.btnactualizar.Location = new System.Drawing.Point(963, 380);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(141, 29);
+            this.btnactualizar.TabIndex = 125;
+            this.btnactualizar.Text = "ACTUALIZAR";
+            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
+            // 
             // frmhotel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(715, 421);
+            this.ClientSize = new System.Drawing.Size(1263, 421);
+            this.Controls.Add(this.btnactualizar);
+            this.Controls.Add(this.DTG);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
@@ -352,7 +380,7 @@ namespace Presentaciones
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnaceptar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtdescripcion);
+            this.Controls.Add(this.txtdireccion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label3);
@@ -368,8 +396,8 @@ namespace Presentaciones
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox17);
             this.Name = "frmhotel";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmhotel";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -386,6 +414,7 @@ namespace Presentaciones
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,7 +428,7 @@ namespace Presentaciones
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtdescripcion;
+        private System.Windows.Forms.TextBox txtdireccion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnaceptar;
@@ -420,5 +449,7 @@ namespace Presentaciones
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.DataGridView DTG;
+        private System.Windows.Forms.Button btnactualizar;
     }
 }
